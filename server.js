@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/student-media',function (req, res){
-  res.send('welcome to student media 1' ));
+  res.send('welcome to student media 1');
 });
 
 app.get('/ui/style.css', function (req, res) {
