@@ -9,16 +9,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/student-media1',function (req, res){
+app.get('/student-media',function (req, res){
     res.sendFile(path.join('welcome to student media 1' ));
-});
-
-app.get('/student-media',function (req, res){
-    res.sendFile(path.join('welcome to student media 2' ));
-});
-
-app.get('/student-media',function (req, res){
-    res.sendFile(path.join('welcome to student media 3' ));
 });
 
 app.get('/ui/style.css', function (req, res) {
