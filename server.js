@@ -13,13 +13,6 @@ app.get('/student-media', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'microsoft.html'));
 });
 
-app.get('/student-media2', function (req, res) {
-  res.send('welcome to my web app page 2');
-});
-app.get('/student-media3', function (req, res) {
-  res.send('welcome to my web app page 3');
-});
-
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
