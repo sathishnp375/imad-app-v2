@@ -9,8 +9,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/', function (req, res) {
-  res.sendFile('welcome to my web app');
+app.get('/student-media', function (req, res) {
+  res.send('welcome to my web app');
 });
 
 app.get('/ui/style.css', function (req, res) {
