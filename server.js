@@ -10,21 +10,11 @@ var config = {
   password : process.env.DB_PASSWORD
 };
 var app = express();
-app.use(morgan('combined'));
+//app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-
-var pool = new Pool(config);
-
-//app.get('/test-db', function (req, res) {
-    // make a select request
-    // make aresponse with the results}
-    pool.query('SELECT * FROM test',function(err,result){
-        
-    });
-
 
 app.get('/studentmedia', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'studentmedia.html'));
