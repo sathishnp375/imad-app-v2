@@ -54,7 +54,7 @@ var htmlTemplate = `<!DOCTYPE html>
                      </div>
          </body>
          </html>
-         ;
+         
          return htmlTemplate;
          }
 
